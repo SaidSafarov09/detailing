@@ -11,7 +11,7 @@ function Main() {
                     </a>
                     <nav class="header__nav">
                         <ul class="header__list">
-                            <li class="header__item"><a class="header__link" href="#about">О </a></li>
+                            <li class="header__item"><a class="header__link" href="#about">О нас</a></li>
                             <li class="header__item"><a class="header__link" href="#ourser">Услуги</a></li>
                             <li class="header__item"><a class="header__link" href="#departhead">Контакты</a></li>
                             <li class="header__item"><a class="header__link" href="#faq">FAQ</a></li>
