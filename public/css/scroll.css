@@ -1,0 +1,16 @@
+::-webkit-scrollbar {
+    width: 10px;
+    background-color:black;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(214.02deg, rgba(164, 114, 36, 0.79) 22.66%, rgba(255, 233, 36, 0.74) 47.92%, #915824 92.95%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+}
+  
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color:black;
+}
