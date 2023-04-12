@@ -1,6 +1,22 @@
 import React from "react";
+import Modal from '@material-ui/core/Modal';
+import '../styles/modal.css';
+import sbp from '../img/sbp.svg';
+import qr from '../img/qr.svg';
+
 
 function PopularServices() {
+
+    const [open1, setOpen1] = React.useState(false);
+  
+    const handleClose1 = () => {
+        setOpen1(false);
+    };
+    
+    const handleOpen1 = () => {
+        setOpen1(true);
+    };
+
     return(
         <div id="popularserv" className="PopularServices">
             <div className="container">
@@ -18,7 +34,20 @@ function PopularServices() {
                                     </div>
                                     <p className="card__bid">Цена <span className="card__price">от 800 руб</span></p>
                                 </div>
-                                <a href="#" className="card__link">Хочу так же!</a>
+                                <button className="modal_button card__link" onClick={handleOpen1} >
+                             Хочу так же!
+                            </button>
+                            <Modal 
+                                onClose={handleClose1}
+                                open={open1}
+                            >
+                                <div className='modal'>
+                                    <div className="modal_content">
+                                        <img src={sbp}/>
+                                        <img src={qr}/>
+                                    </div>
+                                </div>
+                            </Modal>
                             </div>
                             <div className="card__item">
                                 <div className="card__cover">
@@ -31,7 +60,20 @@ function PopularServices() {
                                     </div>
                                     <p className="card__bid">Цена <span className="card__price">от 500 руб</span></p>
                                 </div>
-                                <a href="#" className="card__link">Хочу так же!</a>
+                                <button className="modal_button card__link" onClick={handleOpen1} >
+                             Хочу так же!
+                            </button>
+                            <Modal 
+                                onClose={handleClose1}
+                                open={open1}
+                            >
+                                <div className='modal'>
+                                    <div className="modal_content">
+                                        <img src={sbp}/>
+                                        <img src={qr}/>
+                                    </div>
+                                </div>
+                            </Modal>
                             </div>
                             <div className="card__item">
                                 <div className="card__cover">
@@ -44,7 +86,20 @@ function PopularServices() {
                                     </div>
                                     <p className="card__bid">Цена <span className="card__price">от 2000 руб</span></p>
                                 </div>
-                                <a href="#" className="card__link">Хочу так же!</a>
+                                <button className="modal_button card__link" onClick={handleOpen1} >
+                             Хочу так же!
+                            </button>
+                            <Modal 
+                                onClose={handleClose1}
+                                open={open1}
+                            >
+                                <div className='modal'>
+                                    <div className="modal_content">
+                                        <img src={sbp}/>
+                                        <img src={qr}/>
+                                    </div>
+                                </div>
+                            </Modal>
                             </div>
                         </div>
                 </div>

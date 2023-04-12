@@ -33,9 +33,9 @@ function FooterSite() {
                                     <a href="email">adorableprograbrmmer@gmail.com</a>
                                     <div className="footer__icon">
                                         <div className="icon">
-                                            <a href="#"><img src="/img/Vector.svg" alt=""/></a>
-                                            <a href="#"><img src="/img/discord.svg" alt=""/></a>
-                                            <a href="#"><img src="/img/instagram.svg" alt=""/></a>
+                                            <a href="https://youtube.com"><img src="/img/Vector.svg" alt=""/></a>
+                                            <a href="https://discord.com"><img src="/img/discord.svg" alt=""/></a>
+                                            <a href="https://instagramm.com"><img src="/img/instagram.svg" alt=""/></a>
                                         </div>
                                     </div>
                                 </div>

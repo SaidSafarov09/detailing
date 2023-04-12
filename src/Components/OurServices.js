@@ -1,18 +1,22 @@
-import React from "react";
-// import Modal from '@material-ui/core/Modal';
-
+import React, {useState} from "react";
+import Modal from '@material-ui/core/Modal';
+import '../styles/modal.css';
+import sbp from '../img/sbp.svg';
+import qr from '../img/qr.svg';
 
 function OurServices() {
 
-    // const [open1, setOpen1] = React.useState(false);
+    const [open1, setOpen1] = React.useState(false);
   
-    // const handleClose1 = () => {
-    //     setOpen1(false);
-    // };
+    const handleClose1 = () => {
+        setOpen1(false);
+    };
     
-    // const handleOpen1 = () => {
-    //     setOpen1(true);
-    // };
+    const handleOpen1 = () => {
+        setOpen1(true);
+    };
+
+    
 
 
 
@@ -32,17 +36,21 @@ function OurServices() {
                                     <p className="card__author">Подвески и днища</p>
                                 </div>
                                 <p className="card__bid">Цена <span className="card__price">от 10 000 руб</span></p>
-                            </div>
-                            <button className="modal_button" >
-                                <a href="#" className="card__link">Хочу так же!</a>
-                                </button>
-                                {/* <Modal 
-                                    onClose={handleClose1}
-                                    open={open1}
-                                >
-                                    <div className='modal'>
+                                </div>
+                            <button className="modal_button card__link" onClick={handleOpen1} >
+                             Хочу так же!
+                            </button>
+                            <Modal 
+                                onClose={handleClose1}
+                                open={open1}
+                            >
+                                <div className='modal'>
+                                    <div className="modal_content">
+                                        <img src={sbp}/>
+                                        <img src={qr}/>
                                     </div>
-                                </Modal> */}
+                                </div>
+                            </Modal>
                         </div>
                         <div className="card__item">
                             <div className="card__cover">
@@ -55,9 +63,20 @@ function OurServices() {
                                 </div>
                                 <p className="card__bid">Цена <span className="card__price">от 12 000 руб</span></p>
                             </div>
-                            <button className="modal_button">
-                                <a href="#" className="card__link">Хочу так же!</a>
-                                </button>
+                            <button className="modal_button card__link" onClick={handleOpen1} >
+                             Хочу так же!
+                            </button>
+                            <Modal 
+                                onClose={handleClose1}
+                                open={open1}
+                            >
+                                <div className='modal'>
+                                    <div className="modal_content">
+                                        <img src={sbp}/>
+                                        <img src={qr}/>
+                                    </div>
+                                </div>
+                            </Modal>
                         </div>
                         <div className="card__item">
                             <div className="card__cover">
@@ -70,9 +89,20 @@ function OurServices() {
                                 </div>
                                 <p className="card__bid">Цена <span className="card__price">от 3000 руб</span></p>
                             </div>
-                            <button className="modal_button">
-                                <a href="#" className="card__link">Хочу так же!</a>
-                                </button>
+                            <button className="modal_button card__link" onClick={handleOpen1} >
+                             Хочу так же!
+                            </button>
+                            <Modal 
+                                onClose={handleClose1}
+                                open={open1}
+                            >
+                                <div className='modal'>
+                                    <div className="modal_content">
+                                        <img src={sbp}/>
+                                        <img src={qr}/>
+                                    </div>
+                                </div>
+                            </Modal>
                         </div>
                         <div className="card__item">
                             <div className="card__cover">
@@ -85,9 +115,20 @@ function OurServices() {
                                 </div>
                                 <p className="card__bid">Цена <span className="card__price">от 2000 руб</span></p>
                             </div>
-                            <button className="modal_button">
-                                <a href="#" className="card__link">Хочу так же!</a>
-                                </button>
+                            <button className="modal_button card__link" onClick={handleOpen1} >
+                             Хочу так же!
+                            </button>
+                            <Modal 
+                                onClose={handleClose1}
+                                open={open1}
+                            >
+                                <div className='modal'>
+                                    <div className="modal_content">
+                                        <img src={sbp}/>
+                                        <img src={qr}/>
+                                    </div>
+                                </div>
+                            </Modal>
                         </div>
                         <div className="card__item">
                             <div className="card__cover">
@@ -100,9 +141,20 @@ function OurServices() {
                                 </div>
                                 <p className="card__bid">Цена <span className="card__price">от 2500 руб</span></p>
                             </div>
-                            <button className="modal_button">
-                                <a href="#" className="card__link">Хочу так же!</a>
-                                </button>
+                            <button className="modal_button card__link" onClick={handleOpen1} >
+                             Хочу так же!
+                            </button>
+                            <Modal 
+                                onClose={handleClose1}
+                                open={open1}
+                            >
+                                <div className='modal'>
+                                    <div className="modal_content">
+                                        <img src={sbp}/>
+                                        <img src={qr}/>
+                                    </div>
+                                </div>
+                            </Modal>
                         </div>
                         <div className="card__item">
                             <div className="card__cover">
@@ -115,9 +167,20 @@ function OurServices() {
                                 </div>
                                 <p className="card__bid">Цена <span className="card__price">от 10 000 рублей</span></p>
                             </div>
-                            <button className="modal_button">
-                                <a href="#" className="card__link">Хочу так же!</a>
-                                </button>
+                            <button className="modal_button card__link" onClick={handleOpen1} >
+                             Хочу так же!
+                            </button>
+                            <Modal 
+                                onClose={handleClose1}
+                                open={open1}
+                            >
+                                <div className='modal'>
+                                    <div className="modal_content">
+                                        <img src={sbp}/>
+                                        <img src={qr}/>
+                                    </div>
+                                </div>
+                            </Modal>
                         </div>
                         <div className="card__item">
                             <div className="card__cover">
@@ -130,9 +193,20 @@ function OurServices() {
                                 </div>
                                 <p className="card__bid">Цена <span className="card__price">от 2200 руб</span></p>
                             </div>
-                            <button className="modal_button">
-                                <a href="#" className="card__link">Хочу так же!</a>
-                                </button>
+                            <button className="modal_button card__link" onClick={handleOpen1} >
+                             Хочу так же!
+                            </button>
+                            <Modal 
+                                onClose={handleClose1}
+                                open={open1}
+                            >
+                                <div className='modal'>
+                                    <div className="modal_content">
+                                        <img src={sbp}/>
+                                        <img src={qr}/>
+                                    </div>
+                                </div>
+                            </Modal>
                         </div>
                         <div className="card__item">
                             <div className="card__cover">
@@ -145,9 +219,20 @@ function OurServices() {
                                 </div>
                                 <p className="card__bid">Цена <span className="card__price">от 35 000 руб</span></p>
                             </div>
-                            <button className="modal_button">
-                                <a href="#" className="card__link">Хочу так же!</a>
-                                </button>
+                            <button className="modal_button card__link" onClick={handleOpen1} >
+                             Хочу так же!
+                            </button>
+                            <Modal 
+                                onClose={handleClose1}
+                                open={open1}
+                            >
+                                <div className='modal'>
+                                    <div className="modal_content">
+                                        <img src={sbp}/>
+                                        <img src={qr}/>
+                                    </div>
+                                </div>
+                            </Modal>
                         </div>
                         <div className="card__item">
                             <div className="card__cover">
@@ -160,9 +245,20 @@ function OurServices() {
                                 </div>
                                 <p className="card__bid">Цена <span className="card__price">от 2000 руб</span></p>
                             </div>
-                            <button className="modal_button">
-                                <a href="#" className="card__link">Хочу так же!</a>
-                                </button>
+                            <button className="modal_button card__link" onClick={handleOpen1} >
+                             Хочу так же!
+                            </button>
+                            <Modal 
+                                onClose={handleClose1}
+                                open={open1}
+                            >
+                                <div className='modal'>
+                                    <div className="modal_content">
+                                        <img src={sbp}/>
+                                        <img src={qr}/>
+                                    </div>
+                                </div>
+                            </Modal>
                         </div>
                     </div>
                 </div>
