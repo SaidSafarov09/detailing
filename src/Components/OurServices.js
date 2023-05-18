@@ -3,6 +3,7 @@ import Modal from '@material-ui/core/Modal';
 import '../styles/modal.css';
 import sbp from '../img/sbp.svg';
 import qr from '../img/qr.svg';
+import ModalWindow from "./ModalWindow";
 
 function OurServices() {
 
@@ -44,12 +45,7 @@ function OurServices() {
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <div className='modal'>
-                                    <div className="modal_content">
-                                        <img src={sbp}/>
-                                        <img src={qr}/>
-                                    </div>
-                                </div>
+                                <ModalWindow/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -70,12 +66,7 @@ function OurServices() {
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <div className='modal'>
-                                    <div className="modal_content">
-                                        <img src={sbp}/>
-                                        <img src={qr}/>
-                                    </div>
-                                </div>
+                                <ModalWindow/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -96,12 +87,7 @@ function OurServices() {
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <div className='modal'>
-                                    <div className="modal_content">
-                                        <img src={sbp}/>
-                                        <img src={qr}/>
-                                    </div>
-                                </div>
+                               <ModalWindow/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -122,12 +108,7 @@ function OurServices() {
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <div className='modal'>
-                                    <div className="modal_content">
-                                        <img src={sbp}/>
-                                        <img src={qr}/>
-                                    </div>
-                                </div>
+                                <ModalWindow/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -148,12 +129,7 @@ function OurServices() {
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <div className='modal'>
-                                    <div className="modal_content">
-                                        <img src={sbp}/>
-                                        <img src={qr}/>
-                                    </div>
-                                </div>
+                               <ModalWindow/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -174,12 +150,7 @@ function OurServices() {
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <div className='modal'>
-                                    <div className="modal_content">
-                                        <img src={sbp}/>
-                                        <img src={qr}/>
-                                    </div>
-                                </div>
+                                <ModalWindow/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -200,12 +171,7 @@ function OurServices() {
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <div className='modal'>
-                                    <div className="modal_content">
-                                        <img src={sbp}/>
-                                        <img src={qr}/>
-                                    </div>
-                                </div>
+                                <ModalWindow/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -226,12 +192,7 @@ function OurServices() {
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <div className='modal'>
-                                    <div className="modal_content">
-                                        <img src={sbp}/>
-                                        <img src={qr}/>
-                                    </div>
-                                </div>
+                                <ModalWindow/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -252,12 +213,7 @@ function OurServices() {
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <div className='modal'>
-                                    <div className="modal_content">
-                                        <img src={sbp}/>
-                                        <img src={qr}/>
-                                    </div>
-                                </div>
+                                <ModalWindow/>
                             </Modal>
                         </div>
                     </div>
