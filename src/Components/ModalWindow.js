@@ -41,7 +41,7 @@ function ModalWindow() {
             <input type="password" class="inputbox" name="cvv" id="cvv" required />
         </div>
             <p></p>
-            <button type="submit" class="button">CheckOut</button>
+            <button type="submit" class="button">Оплатить</button>
           </form>
         </div>
       </div>

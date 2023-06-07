@@ -4,6 +4,7 @@ import '../styles/modal.css';
 import sbp from '../img/sbp.svg';
 import qr from '../img/qr.svg';
 import ModalWindow from "./ModalWindow";
+import ModalSelect from "./ModalSelect";
 
 function OurServices() {
 
@@ -39,13 +40,13 @@ function OurServices() {
                                 <p className="card__bid">Цена <span className="card__price">от 10 000 руб</span></p>
                                 </div>
                             <button className="modal_button card__link" onClick={handleOpen1} >
-                             Хочу так же!
+                             Хочу также!
                             </button>
                             <Modal 
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <ModalWindow/>
+                                <ModalSelect/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -60,13 +61,13 @@ function OurServices() {
                                 <p className="card__bid">Цена <span className="card__price">от 12 000 руб</span></p>
                             </div>
                             <button className="modal_button card__link" onClick={handleOpen1} >
-                             Хочу так же!
+                             Хочу также!
                             </button>
                             <Modal 
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <ModalWindow/>
+                               <ModalSelect/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -81,13 +82,13 @@ function OurServices() {
                                 <p className="card__bid">Цена <span className="card__price">от 3000 руб</span></p>
                             </div>
                             <button className="modal_button card__link" onClick={handleOpen1} >
-                             Хочу так же!
+                             Хочу также!
                             </button>
                             <Modal 
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                               <ModalWindow/>
+                               <ModalSelect/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -102,13 +103,13 @@ function OurServices() {
                                 <p className="card__bid">Цена <span className="card__price">от 2000 руб</span></p>
                             </div>
                             <button className="modal_button card__link" onClick={handleOpen1} >
-                             Хочу так же!
+                             Хочу также!
                             </button>
                             <Modal 
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <ModalWindow/>
+                                <ModalSelect/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -123,13 +124,13 @@ function OurServices() {
                                 <p className="card__bid">Цена <span className="card__price">от 2500 руб</span></p>
                             </div>
                             <button className="modal_button card__link" onClick={handleOpen1} >
-                             Хочу так же!
+                             Хочу также!
                             </button>
                             <Modal 
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                               <ModalWindow/>
+                               <ModalSelect/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -144,13 +145,13 @@ function OurServices() {
                                 <p className="card__bid">Цена <span className="card__price">от 10 000 рублей</span></p>
                             </div>
                             <button className="modal_button card__link" onClick={handleOpen1} >
-                             Хочу так же!
+                             Хочу также!
                             </button>
                             <Modal 
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <ModalWindow/>
+                               <ModalSelect/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -165,13 +166,13 @@ function OurServices() {
                                 <p className="card__bid">Цена <span className="card__price">от 2200 руб</span></p>
                             </div>
                             <button className="modal_button card__link" onClick={handleOpen1} >
-                             Хочу так же!
+                             Хочу также!
                             </button>
                             <Modal 
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <ModalWindow/>
+                                <ModalSelect/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -186,13 +187,13 @@ function OurServices() {
                                 <p className="card__bid">Цена <span className="card__price">от 35 000 руб</span></p>
                             </div>
                             <button className="modal_button card__link" onClick={handleOpen1} >
-                             Хочу так же!
+                             Хочу также!
                             </button>
                             <Modal 
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <ModalWindow/>
+                                <ModalSelect/>
                             </Modal>
                         </div>
                         <div className="card__item">
@@ -207,13 +208,13 @@ function OurServices() {
                                 <p className="card__bid">Цена <span className="card__price">от 2000 руб</span></p>
                             </div>
                             <button className="modal_button card__link" onClick={handleOpen1} >
-                             Хочу так же!
+                             Хочу также!
                             </button>
                             <Modal 
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <ModalWindow/>
+                                <ModalSelect/>
                             </Modal>
                         </div>
                     </div>

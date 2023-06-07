@@ -7,7 +7,7 @@ div[role=presentation] {
 .modal {
     position: fixed;
   background-color: #1c1c1c;
-  height: 600px;
+  height: 630px;
   width: 1000px;
   margin: 0 auto;
   text-align: center;
@@ -62,7 +62,7 @@ div[role=presentation] {
 	width: 35rem;
 	border-bottom-right-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
-    padding: 1rem 2rem 2rem 3rem;
+    /* padding: 1rem 2rem 2rem 3rem; */
 }
 
 h1, h2 {

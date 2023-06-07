@@ -13,20 +13,20 @@ function FooterSite() {
                                     </div>
                                     <p>The best website in the world and feel your experience in selling or buy our work</p>
                                 </div>
-                                <div className="footer__text">
+                                {/* <div className="footer__text">
                                     <h2>О нас</h2>
                                     <a href="#">Product</a>
                                     <a href="#">Resource</a>
                                     <a href="#">Term & Condition</a>
                                     <a href="#">FAQ</a>
-                                </div>
-                                <div className="footer__text">
+                                </div> */}
+                                {/* <div className="footer__text">
                                     <h2>Company</h2>
                                     <a href="#">Our Team</a>
                                     <a href="#">Partner With Us</a>
                                     <a href="#">Privacy & Policy</a>
                                     <a href="#">Features</a>
-                                </div>
+                                </div> */}
                                 <div className="footer__text">
                                     <h2>Contact</h2>
                                     <a href="tel: +1 (234) 567-89-10">+1 (234) 567-89-10</a>

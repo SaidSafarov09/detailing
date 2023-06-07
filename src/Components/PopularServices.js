@@ -74,7 +74,7 @@ function PopularServices() {
                                 </div>
                                 <div className="card__info">
                                     <div>
-                                        <p className="card__nick">Палировка</p>
+                                        <p className="card__nick">Полировка</p>
                                         <p className="card__author">Кузов/Интерьер</p>
                                     </div>
                                     <p className="card__bid">Цена <span className="card__price">от 2000 руб</span></p>
