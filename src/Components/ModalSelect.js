@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import '../styles/modalselect.css';
 import Modal from '@material-ui/core/Modal';
 import ModalPayChoise from "./ModalPayChoise";
@@ -15,22 +15,45 @@ function ModalSelect(props) {
         setOpen(true);
     };
 
+
+    const [type, setType] = useState('')
+    const [day, setDay] = useState('')
+    const [time, setTime] = useState('')
+
+
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      const data = {
+        type, day, time
+      }
+
+      fetch('http://localhost:8080/api/data', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      }).then(res => res.json()).then(data => console.log(data))
+    }
+
     const current = new Date();
     const date = `${current.getDate()}.${current.getMonth()+1}.${current.getFullYear()}`;
     return(
         <div className="modal_select">
-                <form>     
+          {/* <form onSubmit={handleSubmit}>      */}
+                <form onSubmit={handleSubmit}>     
                     <h3>Услуга</h3> 
         <p>Выберите тип автомобиля</p>
-        <select className="feedback-input_select" >
+        <select method='post' value={type} name='type' onChange={(e) => setType(e.target.value)} className="feedback-input_select" >
+          <option>Тип автомобиля</option>
           <option>Легковой автомобиль (от 10.000)</option>
           <option>Грузовой автомобиль (от 15.000)</option>
 
         </select>
         <h3>Запись</h3>
         <p>Текущая дата {date}</p>
-        <select className="feedback-input_select" >
-          <option disabled>Дата</option>
+        <select method='post' value={day} name='day' onChange={(e) => setDay(e.target.value)} className="feedback-input_select" >
+          <option >Дата</option>
           <option>{date}</option>
           <option>{current.getDate()+1}.{current.getMonth()+1}.{current.getFullYear()}</option>
           <option>{current.getDate()+2}.{current.getMonth()+1}.{current.getFullYear()}</option>
@@ -41,8 +64,8 @@ function ModalSelect(props) {
           <option>{current.getDate()+7}.{current.getMonth()+1}.{current.getFullYear()}</option>
         </select>
         <p>Время</p>
-        <select className="feedback-input_select" >
-        <option disabled>Время</option>
+        <select method='post' value={time} name='time' onChange={(e) => setTime(e.target.value)} className="feedback-input_select" >
+        <option>Время</option>
           <option>9:00</option>
           <option>10:00</option>
           <option>13:00</option>
@@ -50,15 +73,17 @@ function ModalSelect(props) {
           <option>16:00</option>
           <option>18:00</option>
           </select>
-        <input type="submit" value="Записаться" onClick={handleOpen}/>
+        <input value="Записаться" type="submit" />
+        <input type="submit" className="continue" value="Продолжить" onClick={handleOpen}/>
         </form>
         {/* <span className="close" onClick={handleClose1}>X</span> */}
         <Modal 
                                 onClose={handleClose}
                                 open={open}
                             >
-                                <ModalPayChoise/>
+                                <ModalPayChoise close={handleClose}/>
                             </Modal>
+            {/* </form>                    */}
         </div>
     )
 }

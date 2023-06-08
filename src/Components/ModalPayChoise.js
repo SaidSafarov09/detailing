@@ -29,14 +29,14 @@ function ModalPayChoise(props) {
     return(
         <div className="modal">
             <form>
-        <input type="submit" value="Оплата на месте" onClick={handleOpen1}/>
+        <input  value="Оплата на месте" onClick={handleOpen1}/>
         <Modal onClose={handleClose1} open={open1}>
             <ModalOk/>
         </Modal>
         <p>Или можете выбрать</p>
-        <input type="submit" value="Оплата по карте" onClick={handleOpen2}/>
+        <input  value="Оплата по карте" onClick={handleOpen2}/>
         <Modal onClose={handleClose2} open={open2}>
-            <ModalWindow/>
+            <ModalWindow back_button={handleClose2}></ModalWindow>
         </Modal>
         </form>
         {/* <span className="close" onClick={handleClose1}>X</span> */}

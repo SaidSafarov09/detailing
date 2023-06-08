@@ -4,11 +4,19 @@ div[role=presentation] {
   align-items: center;
 }
 
+.back {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+
 .modal {
     position: fixed;
   background-color: #1c1c1c;
-  height: 630px;
-  width: 1000px;
+  /* height: 630px;
+  width: 1000px; */
   margin: 0 auto;
   text-align: center;
   border-radius: 50px;

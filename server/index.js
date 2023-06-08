@@ -25,11 +25,11 @@ connect().then(() => {
 
 
 app.post('/api/data', async (req, res) => {
-    const {name, phone, email} = await req.body
+    const {name, phone, email, service , type, day, time} = await req.body
     console.log(req.body)
 
     try {
-        const doc =  await new DataSchema({name, phone, email});
+        const doc =  await new DataSchema({name, phone, email, service , type, day, time});
         await doc.save()
         return res.status(201).json({message: 'success'})
     } catch (error) {

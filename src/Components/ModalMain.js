@@ -5,12 +5,13 @@ function ModalMain({prop}) {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
   const [email, setEmail] = useState('')
+  const [service, setService] = useState('')
 
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = {
-      name, email, phone
+      name, email, phone , service
     }
 
     fetch('http://localhost:8080/api/data', {
@@ -30,9 +31,9 @@ function ModalMain({prop}) {
           <input value={phone} name="phone" type="number" className="feedback-input" placeholder="Телефон" onChange={(e) => setPhone(e.target.value)}/>
           <input value={email} name="email" type="text" className="feedback-input" placeholder="Email" onChange={(e) => setEmail(e.target.value)}/>
           <p>Желаемая услуга</p>
-          <select className="feedback-input_select" >
-            <option disabled>Желаемая услуга</option>
-            <option>Химчистка</option>
+          <select method='post' value={service} name='service' onChange={(e) => setService(e.target.value)}  className="feedback-input_select" >
+            <option>Желаемая услуга</option>
+            <option >Химчистка</option>
             <option>Шумоизоляция</option>
             <option>Полировка</option>
             <option>Обклейка кузова</option>

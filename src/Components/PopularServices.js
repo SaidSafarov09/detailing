@@ -4,6 +4,7 @@ import '../styles/modal.css';
 import sbp from '../img/sbp.svg';
 import qr from '../img/qr.svg';
 import ModalWindow from "./ModalWindow";
+import ModalSelect from "./ModalSelect";
 
 
 function PopularServices() {
@@ -42,7 +43,7 @@ function PopularServices() {
                                 onClose={handleClose1}
                                 open={open1}
                             >
-                                <ModalWindow/>
+                                <ModalSelect/>
                             </Modal>
                             </div>
                             <div className="card__item">
@@ -64,7 +65,7 @@ function PopularServices() {
                                 open={open1}
                             >
                                 <div className='modal'>
-                                <ModalWindow/>
+                                <ModalSelect/>
                                 </div>
                             </Modal>
                             </div>
@@ -87,7 +88,7 @@ function PopularServices() {
                                 open={open1}
                             >
                                 <div className='modal'>
-                                <ModalWindow/>
+                                <ModalSelect/>
                                 </div>
                             </Modal>
                             </div>

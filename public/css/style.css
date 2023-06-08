@@ -109,6 +109,7 @@
 .main__btn__gradient{
     background: linear-gradient(214.02deg, rgba(164, 114, 36, 0.79) 22.66%, rgba(255, 233, 36, 0.74) 47.92%, #915824 92.95%);
     margin-right: 17px;
+    cursor: pointer;
 }
 
 .AboutUs {

@@ -4,9 +4,11 @@ import '../styles/modal.css';
 import sbp from '../img/sbp.svg';
 import qr from '../img/qr.svg';
 
-function ModalWindow() {
+function ModalWindow({back_button}) {
+  const back = '< Назад';
     return (
         <div className='modal'>
+          <p className="back" onClick={back_button}>{back}</p>
             <div className="modal_content">
                <img src={sbp}/>
                <img src={qr}/>

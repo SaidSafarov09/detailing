@@ -7,7 +7,11 @@ const dataSchema = new mongoose.Schema({
         reguired: true,
         unique: true
     },
-    phone: String
+    phone: String,
+    service: String,
+    type: String ,
+    day: String ,
+    time: String
 }, {
     timestamps: true
 })
